@@ -35,6 +35,9 @@ en:
   hello: Hello world
   tasks:
     edit: Edit
+    errors:
+      invalid:
+        due_date: Due date
     form:
       category: Category
       description: Description

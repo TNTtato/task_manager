@@ -35,6 +35,9 @@ es:
   hello: Hello world
   tasks:
     edit: Editar Tarea
+    errors:
+      invalid:
+        due_date: Se debe configurar una fecha a un evento futuro
     form:
       category: Categoría
       description: Descripción
@@ -48,7 +51,7 @@ es:
     listing_index: Listado de Tareas
     new_task: Nueva Tarea
     show:
-      category: "Categoría: "
-      description: "Descripción: "
-      due_date: "Fecha de vencimiento: "
-      name: "Nombre: "
+      category: 'Categoría: '
+      description: 'Descripción: '
+      due_date: 'Fecha de vencimiento: '
+      name: 'Nombre: '
