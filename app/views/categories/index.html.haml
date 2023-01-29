@@ -1,10 +1,10 @@
-%h1 Listing categories
+%h1= t('categories.listing_index')
 
 %table
   %thead
     %tr
-      %th Name
-      %th Description
+      %th= t('.name')
+      %th= t('.description')
       %th
       %th
       %th
@@ -14,10 +14,10 @@
       %tr
         %td= category.name
         %td= category.description
-        %td= link_to 'Show', category
-        %td= link_to 'Edit', edit_category_path(category)
-        %td= link_to 'Destroy', category, :method => :delete, :data => { :confirm => 'Are you sure?' }
+        %td= link_to t('common.show'), category
+        %td= link_to t('common.edit'), edit_category_path(category)
+        %td= link_to t('common.destroy'), category, :data => { :turbo_method => :delete, :turbo_confirm => t('common.confirm_deletion') }
 
 %br
 
-= link_to 'New Category', new_category_path
+= link_to t('categories.new_category'), new_category_path

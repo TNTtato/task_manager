@@ -1,12 +1,12 @@
-%h1 Listing tasks
+%h1= t('tasks.listing_index')
 
 %table
   %thead
     %tr
-      %th Name
-      %th Description
-      %th Due date
-      %th Category
+      %th= t('.name')
+      %th= t('.description')
+      %th= t('.due_date')
+      %th= t('.category')
       %th
       %th
       %th
@@ -18,10 +18,10 @@
         %td= task.description
         %td= task.due_date
         %td= task.category
-        %td= link_to 'Show', task
-        %td= link_to 'Edit', edit_task_path(task)
-        %td= link_to 'Destroy', task, :method => :delete, :data => { :confirm => 'Are you sure?' }
+        %td= link_to t('common.show'), task
+        %td= link_to t('common.edit'), edit_task_path(task)
+        %td= link_to t('common.destroy'), task, :data => { :turbo_method => :delete, :turbo_confirm => t('common.confirm_deletion') }
 
 %br
 
-= link_to 'New Task', new_task_path
+= link_to t('tasks.new_task'), new_task_path

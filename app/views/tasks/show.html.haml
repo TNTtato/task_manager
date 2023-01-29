@@ -1,18 +1,18 @@
 %p#notice= notice
 
 %p
-  %b Name:
+  %b= t('.name')
   = @task.name
 %p
-  %b Description:
+  %b= t('.description')
   = @task.description
 %p
-  %b Due date:
+  %b= t('.due_date')
   = @task.due_date
 %p
-  %b Category:
+  %b= t('.category')
   = @task.category
 
-= link_to 'Edit', edit_task_path(@task)
+= link_to t('common.edit'), edit_task_path(@task)
 \|
-= link_to 'Back', tasks_path
+= link_to t('common.back'), tasks_path

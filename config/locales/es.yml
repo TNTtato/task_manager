@@ -1,0 +1,54 @@
+---
+es:
+  activerecord:
+    models:
+      category:
+        one: Categoría
+        others: Categorías
+      task:
+        one: Tarea
+        others: Tareas
+    successful:
+      messages:
+        created: Creación de %{model} exitosa.
+        updated: Actualización de %{model} exitosa.
+  categories:
+    edit: Editar Categoría
+    form:
+      description: Descripción
+      name: Nombre
+    index:
+      description: Descripción
+      name: Nombre
+    listing_index: Listado de Categorías
+    new_category: Nueva Categoría
+    show:
+      description: 'Descripción: '
+      name: 'Nombre: '
+  common:
+    back: Atrás
+    confirm_deletion: "¿Estás seguro de continuar?"
+    destory: Destory
+    destroy: Destruir
+    edit: Editar
+    show: Mostrar
+  hello: Hello world
+  tasks:
+    edit: Editar Tarea
+    form:
+      category: Categoría
+      description: Descripción
+      due_date: Fecha de Vencimiento
+      name: Nombre
+    index:
+      category: Categoría
+      description: Descripción
+      due_date: Fecha de Vencimiento
+      name: Nombre
+    listing_index: Listado de Tareas
+    new_task: Nueva Tarea
+    show:
+      category: "Categoría: "
+      description: "Descripción: "
+      due_date: "Fecha de vencimiento: "
+      name: "Nombre: "

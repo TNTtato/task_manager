@@ -30,6 +30,7 @@ gem "jbuilder"
 gem "hamlit"
 gem "annotate"
 gem "simple_form"
+gem "rails-i18n"
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
@@ -77,3 +78,5 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem "hotwire-rails", "~> 0.1.3"
